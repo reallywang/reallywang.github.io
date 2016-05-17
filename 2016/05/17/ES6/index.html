@@ -8,41 +8,32 @@
 
 <title>
   
-    wangrui&#39;blog
+    ES6
   
 </title>
 
-<meta name="description" content="ES6标签（空格分隔）： es6
-
-
-ECMAScript 和 JavaScript
+<meta name="description" content="ECMAScript 和 JavaScript
 ECMA（欧洲计算机制造联盟 European Computer Manufactures Association）
 ECMA根据JavaScript制定的浏览器脚本语言的标准。
 ECMAScript是JavaScript的规格，JavaScript是ECMAScript的实现。
-2015年6月 ECMAScri">
+2015年6月 ECMAScript 6正式通过。成为国际标准。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="wangrui'blog">
+<meta property="og:title" content="ES6">
 <meta property="og:url" content="http://wangruife.github.io/2016/05/17/ES6/index.html">
 <meta property="og:site_name" content="wangrui'blog">
-<meta property="og:description" content="ES6标签（空格分隔）： es6
-
-
-ECMAScript 和 JavaScript
+<meta property="og:description" content="ECMAScript 和 JavaScript
 ECMA（欧洲计算机制造联盟 European Computer Manufactures Association）
 ECMA根据JavaScript制定的浏览器脚本语言的标准。
 ECMAScript是JavaScript的规格，JavaScript是ECMAScript的实现。
-2015年6月 ECMAScri">
-<meta property="og:updated_time" content="2016-05-17T10:20:45.765Z">
+2015年6月 ECMAScript 6正式通过。成为国际标准。">
+<meta property="og:updated_time" content="2016-05-17T10:29:38.535Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="wangrui'blog">
-<meta name="twitter:description" content="ES6标签（空格分隔）： es6
-
-
-ECMAScript 和 JavaScript
+<meta name="twitter:title" content="ES6">
+<meta name="twitter:description" content="ECMAScript 和 JavaScript
 ECMA（欧洲计算机制造联盟 European Computer Manufactures Association）
 ECMA根据JavaScript制定的浏览器脚本语言的标准。
 ECMAScript是JavaScript的规格，JavaScript是ECMAScript的实现。
-2015年6月 ECMAScri">
+2015年6月 ECMAScript 6正式通过。成为国际标准。">
 
 
   <link rel="alternative" href="/atom.xml" title="wangrui&#39;blog" type="application/atom+xml">
@@ -117,14 +108,14 @@ ECMAScript是JavaScript的规格，JavaScript是ECMAScript的实现。
             
               <li class="tag-list-container">
                 <a href="javascript:;">标签</a>
-                
+                <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/es6/">es6</a><span class="tag-list-count">1</span></li></ul>
               </li>
             
           
             
               <li class="archive-list-container">
                 <a href="javascript:;">归档</a>
-                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a><span class="archive-list-count">1</span></li></ul>
+                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a><span class="archive-list-count">2</span></li></ul>
               </li>
             
           
@@ -178,6 +169,10 @@ ECMAScript是JavaScript的规格，JavaScript是ECMAScript的实现。
       
           <article id="post-ES6" class="article article-type-post">
   
+    <h1 class="article-header">
+      ES6
+    </h1>
+  
   
 
   <div class="article-info">
@@ -188,12 +183,14 @@ ECMAScript是JavaScript的规格，JavaScript是ECMAScript的实现。
     
 
     
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/es6/">es6</a></li></ul>
+	</span>
+
 
   </div>
   <div class="article-entry">
-    <h1 id="ES6"><a href="#ES6" class="headerlink" title="ES6"></a>ES6</h1><p>标签（空格分隔）： es6</p>
-<hr>
-<ul>
+    <ul>
 <li><p>ECMAScript 和 JavaScript</p>
 <p>ECMA（欧洲计算机制造联盟 European Computer Manufactures Association）</p>
 <p>ECMA根据JavaScript制定的浏览器脚本语言的标准。</p>
@@ -417,24 +414,22 @@ str缺省，则会用空格补全长度</code></p>
 <li><p>多行字符串</p>
 </li>
 <li><p>字符串中嵌入变量</p>
-<figure class="highlight plain"><figcaption><span>name = "Bob",time = "today";</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`hello $&#123;name&#125;,how are you $&#123;time&#125;?`</span><br></pre></td></tr></table></figure>
+<p><code>var name = &quot;Bob&quot;,time = &quot;today&quot;;`
+ `hello ${name},how are you ${time}?`
+</code></p>
+</li>
+<li><p>如果模板字符串中使用反引号，前要用反斜杠转义</p>
+<p><code>var greeting = `\`Yo \` world!` ;</code></p>
+</li>
+</ul>
+</li>
+<li><p>标签模板</p>
+<p>函数名后紧接一个模板字符串，此函数处理这个模板字符串。<br>标签模板不是模板，而是函数调用的一种特殊形式。</p>
 </li>
 </ul>
 </li>
 </ul>
-</li>
-</ul>
-<pre><code>    - 如果模板字符串中使用反引号，前要用反斜杠转义
-
-    `` var greeting = `\`Yo \` world!` ;``
-
-- 标签模板
-
- 函数名后紧接一个模板字符串，此函数处理这个模板字符串。
- 标签模板不是模板，而是函数调用的一种特殊形式。
-
-
- - 标签模板的应用
+<pre><code> - 标签模板的应用
 
   　 过滤ＨＴＭＬ字符串，防止用户输入恶意内容。
 
